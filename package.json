@@ -5,11 +5,13 @@
   "main": "app.js",
   "scripts": {
     "start": "DEBUG=app node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint app.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robert-laws/web-app-with-node-express"
+    "url": "https://github.com/robert-laws/web-app-with-node-express",
+    "lint": "eslint app.js"
   },
   "author": "Robert Laws",
   "license": "ISC",
@@ -23,8 +25,8 @@
   },
   "devDependencies": {
     "eslint": "4.19.1",
-    "eslint-config-airbnb-base": "12.1.0",
     "eslint-config-airbnb": "16.1.0",
+    "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.10.0"
   }
 }

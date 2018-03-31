@@ -4,14 +4,13 @@
   "description": "Library App",
   "main": "app.js",
   "scripts": {
-    "start": "DEBUG=app node app.js",
+    "start": "DEBUG=app nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint app.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/robert-laws/web-app-with-node-express",
-    "lint": "eslint app.js"
+    "url": "https://github.com/robert-laws/web-app-with-node-express"
   },
   "author": "Robert Laws",
   "license": "ISC",
@@ -21,12 +20,22 @@
     "debug": "3.1.0",
     "express": "^4.16.3",
     "jquery": "3.3.1",
-    "morgan": "1.9.0"
+    "morgan": "1.9.0",
+    "nodemon": "1.17.3"
   },
   "devDependencies": {
     "eslint": "4.19.1",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.10.0"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": ["node_modules/**/node_modules"],
+    "delay": "2500",
+    "env": {
+      "NODE_ENV": "development",
+      "PORT": 4000
+    }
   }
 }

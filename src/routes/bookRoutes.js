@@ -2,6 +2,10 @@ const express = require('express');
 const { MongoClient, ObjectID } = require('mongodb');
 const debug = require('debug')('app:bookRoutes');
 
+// starting up mongodb -> Roberts-MacBook-Pro-2:bin robertlaws$ ./mongod
+// connecting to mongodb server -> Roberts-MacBook-Pro-2:bin robertlaws$ ./mongo
+// mongodb server location -> connecting to: mongodb://127.0.0.1:27017
+
 const bookRouter = express.Router();
 
 function router(nav) {
